@@ -1,8 +1,8 @@
 ---
 layout: post
-title: embeddedreport
+title: "Power BI Embedded"
 ---
 <div class="bla">
-	<h1>Power BI Embedded</h1>
+	<h1>Embedded report</h1>
 	<p>A sample Sales and Marketing Report</p>
 </div><!-- /.bla -->
