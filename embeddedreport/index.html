@@ -11,8 +11,6 @@ title: Power BI Embedded
 		</div>
 
 <html>  
-
-  
 <body>  
     <h1>Power BI Embedded DDDDD</h1>  
     <div id="reportContainer" style="width: 80%; height: 800px;"></div>  
@@ -23,9 +21,10 @@ title: Power BI Embedded
         var getEmbedToken = "https://contosopowerbi.azurewebsites.net/api/HttpTrigger1";  
   
         $.ajax({  
-            url: getEmbedToken,  
-            jsonpCallback: 'callback',  
-            contentType: 'application/javascript',  
+            url: getEmbedToken, 
+            type: 'GET', 
+           // <!--jsonpCallback: 'callback',  -->
+            //<!--contentType: 'application/javascript', --> 
             dataType: "jsonp",  
             success: function (json) {  
   
