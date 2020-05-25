@@ -1,30 +1,27 @@
----
-layout: default
-title: Power BI Embedded
----
-
-		<div class="embeddedreport">
-			<h1>Power BI Embedded Report</h1>
-			<p>An example of a Sales and Marketing dashboard</p>
-
-			
-		</div>
-
 <html>  
+  
+<head>  
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">  
+    <meta name="viewport" content="width=device-width,initial-scale=1">  
+    <title>Power BI Embedded Demo</title>  
+      
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>  
+    <script type="text/javascript" language="javascript" src="https://rawgit.com/Microsoft/PowerBI-JavaScript/master/dist/powerbi.min.js"></script> </script>  
+</head>  
+  
 <body>  
-    <h1>Power BI Embedded DDDDD</h1>  
+    <h1>Power BI Embedded Demo</h1>  
     <div id="reportContainer" style="width: 80%; height: 800px;"></div>  
 </body>  
   
 <script>  
     $(document).ready(function () {  
-        var getEmbedToken = "https://pbireportembedd.azurewebsites.net/api/HttpTrigger1?code=iI/qnTFyoWG5sa71wyNtlkm2sdonXqekSyw4ZVyJuuKK06wtbMIdSQ==S";  
+        var getEmbedToken = "http://pbireportembedd.azurewebsites.net/api/HttpTrigger1?code=iI/qnTFyoWG5sa71wyNtlkm2sdonXqekSyw4ZVyJuuKK06wtbMIdSQ==";  
   
         $.ajax({  
-            url: getEmbedToken, 
-            type: 'GET', 
-           // <!--jsonpCallback: 'callback',  -->
-            //<!--contentType: 'application/javascript', --> 
+            url: getEmbedToken,  
+            jsonpCallback: 'callback',  
+            contentType: 'application/javascript',  
             dataType: "jsonp",  
             success: function (json) {  
   
@@ -51,4 +48,4 @@ title: Power BI Embedded
     });  
 </script>  
   
-</html>  
+</html> 
