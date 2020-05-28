@@ -13,11 +13,13 @@ title: Power BI Embedded Demo Sales
     <script type="text/javascript" language="javascript" src="https://rawgit.com/Microsoft/PowerBI-JavaScript/master/dist/powerbi.min.js"></script> </script>  
 </head>  
   
-<body>  
-    <h1>Power BI Embedded Demo</h1>  
-    <div id="reportContainer" style="width: 90%; height: 800px;"></div>  
-</body>  
-
+<div class="jumbotron">
+    <h1 class="display-4">Power BI Embedded</h1>
+    <p class="lead">A sample Sales and Marketing Report</p>
+  </div>
+<div class="container-fluid pd-0" >
+        <div id="reportContainer" align="center" style="height: 650px;" ></div>
+</div>
 <script>  
     $(document).ready(function () {  
         var getEmbedToken = "https://pbireporttrial.azurewebsites.net/api/HttpTriggerCSharp1?code=JfIOKJULavrja1CaGoZqyPnLwXPSAu6vfoomkp88zKBfqNseaHAnbQ==";  
